@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Spotify</title>
+	<meta charset="utf-8">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet"  href="css/style.css">
+
+</head>
+<body>
+	<div class="sidebar">
+		<div class="sidebar-wraper">
+			<div class="sidebar__logo">
+				<img src="img/logo.png">
+			</div><!--sidebar--logo -->
+
+			<div class="sidebar__menu">
+				<a class="sidebar__menu__selecionado" href="#"> <i class="fas fa-home"> </i> Início</a>
+				<a href="#"> <i class="fas fa-search"> </i>Buscar</a>
+				<a href="#"> <i class="fas fa-database"> </i>Biblioteca</a>
+			</div><!--sidebar--menu -->
+
+			<div class="sidebar__menu">
+				<p class="sidebar__menu__title">Playlists</p>
+
+				<div class="sidebar__menu__item">
+					<div class="sidebar__menu__item__componente">
+						<span>+</span>
+					</div>
+					<span>Criar uma playlist</span>
+				</div>
+
+				<div class="sidebar__menu__item">
+					<div class="sidebar__menu__item__componente">
+						<i style="margin: 5px 5px 0 5px;" class="fas fa-play-circle"></i>
+					</div>
+					<span>Musicas Curtidas</span>
+				</div>
+			</div><!-- sidebar menu -->
+
+			<div class="sidebar__playlists">
+
+				<a href="">Playlist1</a>
+				<a href="">Playlist2</a>
+				<a href="">Playlist3</a>
+				<a href="">Playlist4</a>
+				<a href="">Playlist5</a>
+			</div><!-- sidebar playlists -->
+
+			<div class="sidebar__playlists">
+				<a href="">Playlist1</a>
+				<a href="">Playlist2</a>
+				<a href="">Playlist3</a>
+				<a href="">Playlist4</a>
+				<a href="">Playlist5</a>
+			</div><!-- sidebar playlists -->
+
+			<div class="sidebar__playlists">
+				<a href="">Playlist1</a>
+				<a href="">Playlist2</a>
+				<a href="">Playlist3</a>
+				<a href="">Playlist4</a>
+				<a href="">Playlist5</a>
+			</div><!-- sidebar playlists -->
+
+		</div><!-- sidebar wrapper -->
+
+	</div><!-- sidebar -->
+
+	<div class="main">
+		<div class="main-wraper">
+			
+			<div class="main__row">
+				<div class="main__row__title"><h2>Parada</h2></div>
+
+				<div class="main__col">
+					<img src="img/top50.png">
+					<h3>As 50 mais tocadas</h3>
+					<p>Confira essa playlist das músicas mais tocadas</p>
+				</div><!-- main col -->
+
+				<div class="main__col">
+					<img src="img/classicos.png">
+					<h3>Clássicos do rock</h3>
+					<p>Confira essa playlist das clássicos do rock</p>
+				</div><!-- main col -->
+
+				<div class="main__col">
+					<img src="img/playlist.png">
+					<h3>Só nacional</h3>
+					<p>Confira essa playlist das músicas nacionais</p>
+				</div><!-- main col -->
+
+				<div class="main__col">
+					<img src="img/sertaneja.png">
+					<h3>Só modão</h3>
+					<p>Confira essa playlist com as melhores modas de viola</p>
+				</div><!-- main col -->
+
+				<div class="main__col">
+					<img src="img/mpb.png">
+					<h3>Mpb</h3>
+					<p>Confira essa playlist mpb e separamos pra você</p>
+				</div><!-- main col -->
+
+				<div class="main__col">
+					<img src="img/alterbridge.png">
+					<h3>As 10 mais tocadas</h3>
+					<p>Confira essa playlist das músicas do Alter Bridge</p>
+				</div><!-- main col -->
+
+				<div class="main__col">
+					<img src="img/biquinicavadao.png">
+					<h3>As 20 mais tocadas</h3>
+					<p>Confira essa playlist do Biquini Cavadão</p>
+				</div><!-- main col -->
+
+				<div class="main__col">
+					<img src="img/orappa.png">
+					<h3>As 10 mais tocadas</h3>
+					<p>Confira essa playlist do Rappa</p>
+				</div><!-- main col -->
+
+				<div class="main__col">
+					<img src="img/pantera.png">
+					<h3>As 10 músicas mais tocadas</h3>
+					<p>Confira essa playlist das músicas mais tocadas do pantera</p>
+				</div><!-- main col -->
+			</div><!-- main row -->
+
+			<div class="main__row">
+				<div class="main__row__title"><h2>Minhas Músicas</h2></div>
+
+				<div class="main__col" data-image="img/gunsrools.png" data-artist="Guns N Roses" data-song="You Cold Be Mine" data-file="assets/youcoldbemine.mp3">
+					<img src="img/gunsrools.png">
+					<h3>Guns N Roses</h3>
+					<p>You Cold Be Mine</p>
+				</div><!-- main col -->
+
+				<div class="main__col" data-image="img/pearljam.jpeg" data-artist="Pearl Jam" data-song="Porch" data-file="assets/porch.mp3">
+					<img src="img/pearljam.jpeg">
+					<h3>Pearl Jam</h3>
+					<p>Porch</p>
+				</div><!-- main col -->
+			</div>
+
+		</div><!-- main wraper -->
+	</div>
+
+	<div class="player">
+		<div class="player__artist">
+			
+		</div>
+
+		<div class="player__control">
+			<div class="player__control__buttons">
+				<a href=""><i class="fas fa-backward"></i></a>
+				<a style="display: none;" id="pauseBtn" href="#"><i class="far fa-pause-circle"></i></a>
+				<a id="playBtn" href="#"><i class="far fa-play-circle"></i></a>
+				<a href=""><i class="fas fa-forward"></i></a>
+			</div>
+
+			<div class="player__control__progress">
+				<div style="width:0%;" class="player__control__progress_2">
+					
+				</div>
+			</div>
+		</div>
+	</div><!-- player -->
+
+	<audio id="audioplayer" style="position: absolute;left: 0;z-index: -999;opacity: 0;" controls="" preload="none" src="assets/porch.mp3"> </audio> 
+
+	
+
+
+	<script src="js/all.min.js"></script>
+
+	<script>
+
+		var audioPlayer = document.getElementById('audioplayer');
+		var loaded = false;
+
+		var playBtn = document.getElementById('playBtn');
+		var pauseBtn = document.getElementById('pauseBtn');
+
+		pauseBtn.addEventListener('click',(e) => {
+			e.preventDefault();
+
+			playBtn.style.display = "inline";
+			pauseBtn.style.display = "none";
+			audioPlayer.pause();
+			return false;
+		});
+
+		playBtn.addEventListener('click',(e) => {
+			e.preventDefault();
+
+			playBtn.style.display = "none";
+			pauseBtn.style.display = "inline";
+			audioPlayer.play();
+			return false
+		});
+
+		const playSong = (file) => {
+			if(loaded == false){
+				audioPlayer.innerHtml = `<source src="`+file+`" type="audio/mp3" />`;
+				loaded = true;
+			}
+
+			audioPlayer.play();
+
+			playBtn.style.display = "none";
+			pauseBtn.style.display = "inline";
+		}
+
+		document.querySelectorAll('.main__col').forEach(item => {
+
+			item.addEventListener('click', event => {
+				let image = item.getAttribute('data-image');
+				let artist = item.getAttribute('data-artist');
+				let song = item.getAttribute('data-song');
+				let file = item.getAttribute('data-file');
+
+				let playerArtistComponent = document.getElementsByClassName('player__artist');
+
+				playerArtistComponent[0].innerHtml = `
+				<img src="https://res.cloudinary.com/dloadb2bx/image/upload/v1629554083/k5jmnjnf2vwxt4gvre8r.jpg" />
+				<h3>`+artist+`</br><span>`+song+`</span></h3>
+				`; 
+				playSong(file);
+			})
+
+
+			  // Show loading animation.
+			  //var playPromise = audioPlayer.play();
+			 
+			  //if (playPromise !== undefined) {
+			    //playPromise.then(_ => {
+			      // Automatic playback started!
+			      // Show playing UI.
+			      // We can now safely pause video...
+			      //audioPlayer.pause();
+			    //})
+			    //.catch(error => {
+			      // Auto-play was prevented
+			      // Show paused UI.
+			   // });
+  			//}
+
+		});
+
+	</script>
+</body>
+</html>
